@@ -1,15 +1,6 @@
 # Introduction to this Shopping Cart API
 Shopping Cart API is an interface that allows website to manage cart in the client side (data only).
 
-## Utility Class (Helpers)
-
-| Methods | Description | Parameters | Returns | Throws |
-| --- | --- | --- | --- | --- |
-| `isPositiveInteger` | Checks if a given number is a positive integer | `n`: a number | `true` if `n` is a positive integer, otherwise `false` | N/A |
-| `isNonNegativeFinite` | Checks if a given number is a non-negative finite number | `n`: a number | `true` if `n` is a non-negative finite number, otherwise `false` | N/A |
-| `isPositiveFinite` | Checks if a given number is a positive finite number | `n`: a number | `true` if `n` is a positive finite number, otherwise `false` | N/A |
-| `validate` | Validates a value against a given test function, throws an error with a message if the test fails | `testFn`: a function that takes a value and returns a boolean, `value`: the value to validate, `message`: the error message to throw if the test fails | The validated `value` | `Error` with the given `message` if the test fails |
-
 ## Cart Item
 | Methods | Description | Parameters | Returns | Throws |
 | --- | --- | --- | --- | --- |
@@ -30,3 +21,11 @@ Shopping Cart API is an interface that allows website to manage cart in the clie
 | `getTotal` | Calculates the total final price of all items in the cart | N/A | The total final price as a positive finite number | N/A |
 | `getAllCartItems` | Returns a copy of all `CartItem` instances in the cart | N/A | An array containing copies of all `CartItem` instances in the cart | N/A |
 | `clearCartData` | Removes all `CartItem` instances from the cart | N/A | The updated `Cart` instance | N/A |
+
+## Utility Class (Helpers)
+| Methods | Description | Parameters | Returns | Throws |
+| --- | --- | --- | --- | --- |
+| `isPositiveInteger` | Checks if a given number is a positive integer | `n`: a number | `true` if `n` is a positive integer, otherwise `false` | N/A |
+| `isNonNegativeFinite` | Checks if a given number is a non-negative finite number | `n`: a number | `true` if `n` is a non-negative finite number, otherwise `false` | N/A |
+| `isPositiveFinite` | Checks if a given number is a positive finite number | `n`: a number | `true` if `n` is a positive finite number, otherwise `false` | N/A |
+| `validate` | Validates a value against a given test function, throws an error with a message if the test fails | `testFn`: a function that takes a value and returns a boolean, `value`: the value to validate, `message`: the error message to throw if the test fails | The validated `value` | `Error` with the given `message` if the test fails |
